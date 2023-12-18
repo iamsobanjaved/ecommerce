@@ -22,11 +22,11 @@ OSCAR_APPS = [
     'oscar.apps.wishlists',
 
     'ecommerce.extensions',
-    'ecommerce.extensions.iap',
+    'ecommerce.extensions.iap.apps.IapConfig',
     'ecommerce.extensions.api',
     'ecommerce.extensions.communication.apps.CommunicationConfig',
-    'ecommerce.extensions.fulfillment',
-    'ecommerce.extensions.refund',
+    'ecommerce.extensions.fulfillment.apps.FulfillmentAppConfig',
+    'ecommerce.extensions.refund.apps.RefundConfig',
     'ecommerce.extensions.analytics',
     'ecommerce.extensions.basket',
     'ecommerce.extensions.catalogue',
@@ -50,12 +50,12 @@ OSCAR_APPS = [
     'oscar.apps.dashboard.communications',
     'oscar.apps.dashboard.shipping',
 
-    'ecommerce.extensions.dashboard',
-    'ecommerce.extensions.dashboard.catalogue',
-    'ecommerce.extensions.dashboard.offers',
-    'ecommerce.extensions.dashboard.refunds.apps.RefundsDashboardConfig',  # Providing full path to make the signals work
-    'ecommerce.extensions.dashboard.orders',
-    'ecommerce.extensions.dashboard.users',
+    'ecommerce.extensions.dashboard.apps.DashboardConfig',
+    'ecommerce.extensions.dashboard.catalogue.apps.CatalogueDashboardConfig',
+    'ecommerce.extensions.dashboard.offers.apps.OffersDashboardConfig',
+    'ecommerce.extensions.dashboard.refunds.apps.RefundsDashboardConfig',
+    'ecommerce.extensions.dashboard.orders.apps.OrdersDashboardConfig',
+    'ecommerce.extensions.dashboard.users.apps.UsersDashboardConfig',
 
     # 3rd-party apps that oscar depends on
     'haystack',

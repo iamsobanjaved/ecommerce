@@ -339,7 +339,7 @@ LOCAL_APPS = [
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
-INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + OSCAR_APPS
+INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS #+ OSCAR_APPS
 # END APP CONFIGURATION
 
 
