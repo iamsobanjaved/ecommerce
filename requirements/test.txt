@@ -682,6 +682,8 @@ pylint==2.12.2
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/test.in
+pymemcache==4.0.0
+    # via -r requirements/test.in
 pymongo==3.13.0
     # via
     #   -r requirements/base.txt

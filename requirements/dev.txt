@@ -708,6 +708,8 @@ pyjwt[crypto]==2.7.0
     #   social-auth-core
 pylint==2.12.2
     # via -r requirements/test.txt
+pymemcache==4.0.0
+    # via -r requirements/test.txt
 pymongo==3.13.0
     # via
     #   -r requirements/test.txt
